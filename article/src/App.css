@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  font-size: 10px;
+}
+/* HEADER */
+
+.header{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(71, 71, 71);
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 10%;
+}
+.panel{
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+.user-panel{
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  justify-content: center;
+}
+.panel-menu{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top:5rem;
+  background-color: rgb(131, 123, 123);
+  width: 10rem;
+  max-height: 15rem;
+  right: 0.5rem;
+  border-radius: 0.5rem;
+  padding-top:1rem ;
+  row-gap: 1rem;
+display: none;
+}
+.panel-menu-active{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 5rem;
+  background-color: rgb(131, 123, 123);
+  max-width: 20rem;
+  max-height: 30rem;
+  right: 0.5rem;
+  border-radius: 0.5rem;
+  padding-top:1rem ;
+  row-gap: 1rem;
+
+}
+.panel-link{
+  color: white;
+  font-size: 1.4rem;
+  border-bottom: 1px solid white;
+  width: 100%;
+  width: 14rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+.dashboard-icon{
+  font-size: 2rem;
+}
+.logout-icon{
+  font-size: 2rem;
+}
+.dashboard-btn{
+  display: flex;
+  align-items: center;
+  border-radius: 0.6rem;
+  font-size:5rem;
+  column-gap: 0.6rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+ 
+}
+
+.menu-link{
+  display: flex;
+  align-items: center;
+  column-gap: 4rem;
+}
+.nav-home{
+  font-size: 1.8rem;
+  color: white;
+}
+.nav-articles{
+  font-size: 1.8rem;
+  color: white;
+}
+.login-btn{
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+}
+.signup-btn{
+  color: white;
+  font-size: 1.6rem;
+  background-color: rgb(94, 94, 94);
+  width: 10rem;
+  text-align: center;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+
+/* LOGİN */
+
+.login-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3.5rem;
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.1);
+  border-radius: 0.5rem;
+  padding: 2.5rem 3rem;
+  background-color: white;
+}
+.login-title{
+  font-size: 2rem;
+  position: relative;
+}
+
+.login-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3rem;
+}
+.email-input input,
+.username-input input ,
+.password-input input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 20rem;
+}
+
+.btn-btnlogin{
+  font-size: 1.6rem;
+  background-color: #E8E8E8;
+  width: 20rem;
+  text-align: center;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.login-box p{
+  font-size: 1.2rem;
+}
+
+
+/* SİGNUP */
+
+
+.signup-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.signup-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3.5rem;
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.1);
+  border-radius: 0.5rem;
+  padding: 2.5rem 3rem;
+  background-color: white;
+}
+.signup-title{
+  font-size: 2rem;
+  position: relative;
+}
+
+.signup-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3rem;
+}
+
+.username-input input ,
+.password-input input ,
+.email-input input
+{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 20rem;
+}
+
+.btn-btnsignup{
+  font-size: 1.6rem;
+  background-color: #E8E8E8;
+  width: 20rem;
+  text-align: center;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+
+
+/* DASHBOARD */
+.profile-wrapper{
+  padding-top:12rem ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.profile-title{
+  font-size: 3rem;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+  width: 100%;
+  text-align: center;
+}
+.profile{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  padding-top: 4rem;
+  box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
+  padding: 3rem;
+  border-radius: 2rem;
+}
+
+.profile-foto{
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  color: gray;
+  border-radius: 50%;
+}
+.profile-foto-wrapper{
+  position: relative;
+}
+.addimage{
+  position: absolute;
+  top: 12rem;
+  left:4rem;
+  font-size: 1.2rem;
+}
+.profile-content{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+.profile-email  ,
+.profile-username  ,
+.profile-password 
+{
+font-size: 1.4rem;
+}
+.profile-email input ,
+.profile-username input ,
+.profile-password input{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 20rem;
+}
+
+.profile-edit{
+  font-size: 1.6rem;
+  background-color: #E8E8E8;
+  width: 20rem;
+  text-align: center;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.profile-icon{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+
+}
+
+/* CREATEARTİCLE */
+
+
+
+.createarticle-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.createarticle-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3.5rem;
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.1);
+  border-radius: 0.5rem;
+  padding: 2.5rem 3rem;
+  background-color: white;
+}
+.createarticle-title{
+  font-size: 2rem;
+  position: relative;
+}
+
+.createarticle-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3rem;
+}
+.content-title p,
+.content-description p{
+  font-size: 1.3rem;
+}
+.content-title input,
+.content-description input
+ {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 20rem;
+}
+.content-title input{
+  width: 28rem;
+}
+.content-description textarea {
+  outline: none;
+
+}
+.btn-btncreatearticle{
+  font-size: 1.5rem;
+  background-color: #E8E8E8;
+  width: 20rem;
+  text-align: center;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+textarea{
+  resize: none;
+}
+/* ARTİCLE */
+.articles{
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4rem;
+}
+.article{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  background-color: white;
+  border-bottom: 1px solid black;
+  position: relative;
+  padding-bottom: 1rem;
+  width: 55rem;
+}
+.article-title{
+  font-size: 1.8rem;
+}
+.article-author{
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  column-gap: 0.4rem;
+}
+
+
+.article-author p{
+  font-size: 1.6rem;
+  font-weight: 500;
+
+}
+
+.article-date{
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  column-gap: 0.4rem;
+
+}
+.article-date p{
+  font-size: 1.6rem;
+  font-weight: 500;
+  
+}
+
+.article-action{
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+
+}
+.delete-article{
+  background-color: red;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.go-article{
+  background-color: rgb(34, 206, 0);
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+
+/* ARTİCLEPAGE */
+
+
+.articlepage{
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.articlepage-title{
+  font-size: 3rem;
+}
+
+.articlepage-date{
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.articlepage-author{
+  font-size: 1.3rem;
+}
+.articlepage-description{
+  font-size: 1.6rem;
+  width: 120rem;
+  margin-top: 3rem;
+}
